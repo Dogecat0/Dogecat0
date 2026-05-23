@@ -1,68 +1,77 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 850 400" width="100%" height="100%" style="border-radius: 12px; overflow: hidden; background: var(--bg-canvas);">
   <!--
-    Zhicheng Wang (Dogecat0) - Profile README Constellation Redesign (Revision 2)
-    Handcrafted isometric 30*60 axis model representing GEOINT, AI, Analytics, and UX/Interactive projects.
-    Optimized with thin, delicate stroke weights and precise boundary alignments.
+    Zhicheng Wang (Dogecat0) - Profile README Constellation (Revision 3)
+    Handcrafted isometric 30*60 axis model. Re-skinned to the Dossigraphica brand palette:
+    cream, ink, archivist gold, crimson, executive blue, and hunter green.
   -->
   <style><![CDATA[
     /* ==================== THEME SYSTEM TOKENS ==================== */
     :root {
-      --bg-canvas: #ffffff;
-      --bg-grid: #f9fafb;
-      --grid-dot: rgba(124, 58, 237, 0.08);
-      
-      --stroke-primary: #1f2937;
-      --stroke-secondary: #4b5563;
-      --stroke-glow: rgba(124, 58, 237, 0.15);
-      
-      --fill-card-bg: #ffffff;
-      --fill-card-grey: #f3f4f6;
-      --fill-card-dark: #e5e7eb;
-      
-      --color-purple: #8b5cf6;
-      --color-purple-light: #f5f3ff;
-      --color-green: #10b981;
-      --color-green-light: #ecfdf5;
-      --color-yellow: #f59e0b;
-      --color-yellow-light: #fef3c7;
-      --color-cyan: #06b6d4;
-      --color-cyan-light: #ecfeff;
-      --color-orange: #f97316;
-      --color-orange-light: #fff7ed;
-      
-      --text-main: #1f2937;
+      --bg-canvas: #faf8f0;
+      --bg-grid: #f3f0e2;
+      --grid-dot: rgba(197, 168, 128, 0.22);
+
+      --stroke-primary: #121214;
+      --stroke-secondary: #404044;
+      --stroke-glow: rgba(197, 168, 128, 0.22);
+
+      --fill-card-bg: #faf8f0;
+      --fill-card-grey: #f3f0e2;
+      --fill-card-dark: #dcd5ba;
+
+      --color-blue: #3c6b99;
+      --color-blue-light: #e8f0f8;
+      --color-green: #4a7258;
+      --color-green-light: #e8f0ea;
+      --color-gold: #c5a880;
+      --color-gold-light: #f4f3e6;
+      --color-teal: #3c6b99;
+      --color-teal-light: #e8f0f8;
+      --color-crimson: #c2593f;
+      --color-crimson-light: #faf0ea;
+
+      --color-logo-red: #a33333;
+      --color-logo-cream: #f4f3e6;
+      --color-logo-gold: #b08d57;
+      --color-logo-ink: #1a1a1a;
+
+      --text-main: #121214;
       --text-muted: #6b7280;
-      --text-orange: #f97316;
-      
+      --text-accent: #a33333;
+
       --font-mono: 'JetBrains Mono', 'Fira Code', 'Courier New', monospace;
-      --font-sans: 'Inter', 'Poppins', -apple-system, sans-serif;
+      --font-sans: 'Inter', 'Crimson Pro', 'Poppins', -apple-system, sans-serif;
     }
 
     @media (prefers-color-scheme: dark) {
       :root {
         --bg-canvas: #0d1117;
         --bg-grid: #090d13;
-        --grid-dot: rgba(56, 189, 248, 0.06);
-        
+        --grid-dot: rgba(255, 255, 255, 0.12);
+
         --stroke-primary: #c9d1d9;
         --stroke-secondary: #8b949e;
-        --stroke-glow: rgba(56, 189, 248, 0.2);
-        
+        --stroke-glow: rgba(197, 168, 128, 0.15);
+
         --fill-card-bg: #161b22;
         --fill-card-grey: #21262d;
         --fill-card-dark: #30363d;
-        
-        --color-purple: #a78bfa;
-        --color-purple-light: #1e1b4b;
-        --color-green: #34d399;
-        --color-green-light: #064e3b;
-        --color-yellow: #fbbf24;
-        --color-yellow-light: #451a03;
-        --color-cyan: #22d3ee;
-        --color-cyan-light: #083344;
-        --color-orange: #fb923c;
-        --color-orange-light: #431407;
-        
+
+        --color-blue: #6ba5d1;
+        --color-blue-light: #0d1b2b;
+        --color-green: #5a8a6a;
+        --color-green-light: #0d2818;
+        --color-gold: #d4b896;
+        --color-gold-light: #2d1f0a;
+        --color-teal: #6ba5d1;
+        --color-teal-light: #0d1b2b;
+        --color-crimson: #d47a5a;
+        --color-crimson-light: #2d1a0d;
+
+        --color-logo-red: #c2593f;
+        --color-logo-cream: #f4f3e6;
+        --color-logo-gold: #d4b896;
+
         --text-main: #c9d1d9;
         --text-muted: #8b949e;
       }
@@ -80,7 +89,7 @@
     .interactive-group:hover {
       transform: translateY(-4px);
     }
-    
+
     .interactive-card {
       cursor: pointer;
       transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.2);
@@ -89,7 +98,7 @@
       transform: translateY(-6px) scale(1.02);
     }
 
-    /* Double-Layer Decoupled Floating Keyframes with slight 3D rotation */
+    /* Floating Keyframes */
     .float-slow { animation: floatSlowAnim 6s ease-in-out infinite; }
     .float-med { animation: floatMedAnim 5s ease-in-out infinite; }
     .float-fast { animation: floatFastAnim 4s ease-in-out infinite; }
@@ -141,16 +150,16 @@
       stroke-width: 1.2;
       opacity: 0.15;
     }
-    .pipeline-pulse-purple {
+    .pipeline-pulse-blue {
       fill: none;
-      stroke: url(#grad-purple);
+      stroke: url(#grad-blue);
       stroke-width: 1.5;
       stroke-dasharray: 8 30;
       animation: pulseFlow 3s linear infinite;
     }
-    .pipeline-pulse-cyan {
+    .pipeline-pulse-teal {
       fill: none;
-      stroke: url(#grad-cyan);
+      stroke: url(#grad-teal);
       stroke-width: 1.5;
       stroke-dasharray: 8 30;
       animation: pulseFlow 2.5s linear infinite reverse;
@@ -168,7 +177,7 @@
       }
     }
 
-    /* Laptop Scanline and Bar Animation */
+    /* Laptop Scanline */
     .scan-line {
       stroke: var(--color-green);
       stroke-width: 1;
@@ -177,7 +186,7 @@
     }
     @keyframes laptopScan {
       0% { transform: translate(0, 0); }
-      100% { transform: translate(42px, -21px); } /* Moving along isometric 30 deg axis */
+      100% { transform: translate(42px, -21px); }
     }
 
     /* Server LED Status Matrix */
@@ -189,30 +198,18 @@
       50% { opacity: 1; }
     }
 
-    /* Waveform Oscilloscope Animation */
+    /* Waveform Oscilloscope */
     .osc-wave {
       animation: oscScroll 3s linear infinite;
     }
     @keyframes oscScroll {
       0% { transform: translate(0, 0); }
-      100% { transform: translate(-30px, 15px); } /* Translating along 30 deg isometric down-left axis */
+      100% { transform: translate(-30px, 15px); }
     }
 
-    /* Rocket Experimental Capsule Animations */
-    .rocket-bubble-1 {
-      animation: bubbleRise 2.2s ease-in-out infinite;
-    }
-    .rocket-bubble-2 {
-      animation: bubbleRise 1.8s ease-in-out infinite 0.7s;
-    }
+    /* Rocket Capsule Animations */
     .rocket-glow {
       animation: rocketGlowAnim 1.5s ease-in-out infinite alternate;
-    }
-    @keyframes bubbleRise {
-      0% { transform: translateY(10px); opacity: 0; }
-      20% { opacity: 0.8; }
-      80% { opacity: 0.8; }
-      100% { transform: translateY(-8px); opacity: 0; }
     }
     @keyframes rocketGlowAnim {
       0% { opacity: 0.4; }
@@ -220,31 +217,11 @@
     }
 
     /* Typographic styles */
-    .text-title {
-      font-family: var(--font-sans);
-      font-weight: 800;
-      font-size: 26px;
-      fill: var(--text-main);
-    }
-    .text-title-bold {
-      font-family: var(--font-sans);
-      font-weight: 900;
-      font-size: 32px;
-      fill: var(--text-main);
-    }
-    .text-title-purple {
-      fill: var(--color-purple);
-    }
-    .text-subtitle {
-      font-family: var(--font-sans);
-      font-weight: 700;
-      font-size: 11px;
-      fill: var(--text-orange);
-    }
     .text-label {
       font-family: var(--font-mono);
       font-size: 9.5px;
-      font-weight: bold;
+      font-weight: 800;
+      letter-spacing: 0.14em;
       fill: var(--text-main);
       pointer-events: none;
     }
@@ -259,52 +236,50 @@
 
   <defs>
     <!-- Blueprint Dot Grid -->
-    <pattern id="dotGridPattern" width="30" height="17.32" patternUnits="userSpaceOnUse">
-      <circle cx="0" cy="0" r="1.1" fill="var(--grid-dot)" />
-      <circle cx="15" cy="8.66" r="1.1" fill="var(--grid-dot)" />
-      <circle cx="30" cy="0" r="1.1" fill="var(--grid-dot)" />
-      <circle cx="0" cy="17.32" r="1.1" fill="var(--grid-dot)" />
-      <circle cx="30" cy="17.32" r="1.1" fill="var(--grid-dot)" />
+    <pattern id="dotGridPattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <circle cx="2" cy="2" r="1" fill="var(--grid-dot)" />
     </pattern>
 
-    <!-- Glowing Drop Shadow Filter -->
-    <filter id="glow-node" x="-30%" y="-30%" width="160%" height="160%">
-      <feGaussianBlur stdDeviation="3.5" result="blur" />
-      <feColorMatrix type="matrix" values="1 0 0 0 0  0 1 0 0 0  0 0 1 0 0  0 0 0 0.4 0" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
+    <!-- Floor Drop Shadow Filter -->
+    <filter id="floorShadow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="6" />
     </filter>
 
     <!-- Card shadow -->
     <filter id="shadow-card" x="-20%" y="-20%" width="140%" height="140%">
-      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#0a0a0a" flood-opacity="0.15" />
+      <feDropShadow dx="0" dy="4" stdDeviation="3" flood-color="#121214" flood-opacity="0.12" />
     </filter>
 
-    <!-- Premium Linear Gradients -->
-    <linearGradient id="grad-purple" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="var(--color-purple)" />
-      <stop offset="100%" stop-color="#ec4899" />
+    <!-- Premium Linear Gradients (Dossigraphica Brand Palette) -->
+    <linearGradient id="grad-blue" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="var(--color-blue)" />
+      <stop offset="100%" stop-color="#1f486d" />
     </linearGradient>
     <linearGradient id="grad-green" x1="0%" y1="100%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="var(--color-green)" />
-      <stop offset="100%" stop-color="#059669" />
+      <stop offset="100%" stop-color="#2e4d3a" />
     </linearGradient>
-    <linearGradient id="grad-yellow" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="var(--color-yellow)" />
-      <stop offset="100%" stop-color="var(--color-orange)" />
+    <linearGradient id="grad-gold" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="var(--color-gold)" />
+      <stop offset="100%" stop-color="#b08d57" />
     </linearGradient>
-    <linearGradient id="grad-cyan" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="var(--color-cyan)" />
-      <stop offset="100%" stop-color="var(--color-purple)" />
+    <linearGradient id="grad-teal" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="var(--color-teal)" />
+      <stop offset="100%" stop-color="var(--color-blue)" />
     </linearGradient>
-    <linearGradient id="grad-orange" x1="0%" y1="100%" x2="100%" y2="0%">
-      <stop offset="0%" stop-color="var(--color-orange)" />
-      <stop offset="100%" stop-color="#ef4444" />
+    <linearGradient id="grad-crimson" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="var(--color-crimson)" />
+      <stop offset="100%" stop-color="var(--color-logo-red)" />
     </linearGradient>
 
-    <!-- Oscilloscope Screen Clipping Mask to prevent waveform bleed -->
+    <!-- Cylinder Side Gradient (for central core) -->
+    <linearGradient id="grad-cylinder-side" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#1f486d" />
+      <stop offset="50%" stop-color="#3c6b99" />
+      <stop offset="100%" stop-color="#1f486d" />
+    </linearGradient>
+
+    <!-- Oscilloscope Screen Clipping Mask -->
     <clipPath id="consoleClip">
       <path d="M-5,57 L25,42 L55,57 L25,72 Z" />
     </clipPath>
@@ -314,109 +289,112 @@
   <rect width="100%" height="100%" class="bg-rect" />
   <rect width="100%" height="100%" class="grid-layer" />
 
+  <!-- Subtle Archivist Gold Hairline Border -->
+  <rect x="10" y="10" width="830" height="380" fill="none" stroke="rgba(197, 168, 128, 0.18)" stroke-width="1" />
+
   <!-- ==================== MAIN WORKSTATION STRUCTURE ==================== -->
-  <!-- Centered at around x=425, y=210 to center the illustration perfectly in the viewBox -->
   <g transform="translate(425, 210)">
+
+    <!-- ====== FLOOR CAST SHADOWS ====== -->
+    <ellipse cx="-110" cy="70" rx="55" ry="14" fill="rgba(18, 18, 20, 0.07)" filter="url(#floorShadow)" />
+    <ellipse cx="120" cy="20" rx="45" ry="12" fill="rgba(18, 18, 20, 0.07)" filter="url(#floorShadow)" />
+    <ellipse cx="20" cy="75" rx="40" ry="10" fill="rgba(18, 18, 20, 0.07)" filter="url(#floorShadow)" />
+    <ellipse cx="0" cy="10" rx="35" ry="9" fill="rgba(18, 18, 20, 0.07)" filter="url(#floorShadow)" />
 
     <!-- ====== BASE SHADOW AND FLOOR PLATE ====== -->
     <!-- Base Plate Left face -->
-    <path d="M-200,100 L-40,20 L0,40 L-160,120 Z" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
+    <path d="M-200,100 L-40,20 L0,40 L-160,120 Z" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
     <!-- Base Plate Right face -->
-    <path d="M-40,20 L120,-60 L160,-40 L0,40 Z" fill="var(--fill-card-grey)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
+    <path d="M-40,20 L120,-60 L160,-40 L0,40 Z" fill="var(--fill-card-grey)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
     <!-- Top accent floor trim -->
-    <path d="M-190,95 L-40,20 L110,-55" fill="none" stroke="var(--stroke-primary)" stroke-dasharray="3 5" stroke-width="0.8" />
+    <path d="M-190,95 L-40,20 L110,-55" fill="none" stroke="var(--color-logo-gold)" stroke-dasharray="3 5" stroke-width="0.8" opacity="0.5" />
 
     <!-- Cyber-Data Pipelines (Floor Circuit Traces) -->
-    <!-- Left Pipeline to Laptop -->
     <path d="M-20,10 L-60,30 L-110,60" class="pipeline-bg" />
     <path d="M-20,10 L-60,30 L-110,60" class="pipeline-pulse-green" />
 
-    <!-- Right Pipeline to Server -->
     <path d="M20,-10 L70,-35 L120,-35" class="pipeline-bg" />
-    <path d="M20,-10 L70,-35 L120,-35" class="pipeline-pulse-purple" />
+    <path d="M20,-10 L70,-35 L120,-35" class="pipeline-pulse-blue" />
 
-    <!-- Center-Down Pipeline to GEOINT Console -->
     <path d="M10,25 L45,42.5 L45,95" class="pipeline-bg" />
-    <path d="M10,25 L45,42.5 L45,95" class="pipeline-pulse-cyan" />
+    <path d="M10,25 L45,42.5 L45,95" class="pipeline-pulse-teal" />
 
-    <!-- ====== CENTRAL CORE COLUMN (UPGRADED TO GLASSMORPHIC CYLINDER) ====== -->
-    <!-- Rear Interior Cylinder Wall (gives it 3D interior depth) -->
-    <path d="M-40,-60 A40,20 0 0,1 40,-60 L40,60 A40,20 0 0,1 -40,60 Z" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.1" opacity="0.6" />
+    <!-- ====== CENTRAL CORE COLUMN (INK & GOLD CYLINDER) ====== -->
+    <!-- Rear Interior Cylinder Wall -->
+    <path d="M-40,-60 A40,20 0 0,1 40,-60 L40,60 A40,20 0 0,1 -40,60 Z" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.5" opacity="0.6" />
 
-    <!-- ====== FLOATING 3D HOLOGRAPHIC CUBE (Inside the Glass Cylinder) ====== -->
+    <!-- ====== FLOATING 3D CUBE (Inside Cylinder) ====== -->
     <g class="float-med" transform="translate(0, -5)">
-      <!-- Central connection rod -->
       <line x1="0" y1="20" x2="0" y2="-20" stroke="var(--stroke-primary)" stroke-width="1.2" opacity="0.7" />
 
-      <!-- Isometric Rubik's-style Cube: Semi-transparent holographic faces -->
-      <!-- Left face Group (Yellow Gradient - Transparent) -->
+      <!-- Left face (Gold) -->
       <g class="core-shifter-left">
-        <path d="M-24,0 L0,-12 L0,12 L-24,24 Z" fill="url(#grad-yellow)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" opacity="0.75" />
-        <!-- Left face division -->
-        <line x1="-12" y1="6" x2="-12" y2="18" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.6" />
-        <line x1="-24" y1="12" x2="0" y2="0" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.6" />
+        <path d="M-24,0 L0,-12 L0,12 L-24,24 Z" fill="url(#grad-gold)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" opacity="0.8" />
+        <line x1="-12" y1="6" x2="-12" y2="18" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.5" />
+        <line x1="-24" y1="12" x2="0" y2="0" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.5" />
       </g>
 
-      <!-- Right face Group (Purple Gradient - Transparent) -->
+      <!-- Right face (Blue) -->
       <g class="core-shifter-right">
-        <path d="M0,12 L0,-12 L24,0 L24,24 Z" fill="url(#grad-purple)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" opacity="0.75" />
-        <!-- Right face division -->
-        <line x1="12" y1="6" x2="12" y2="18" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.6" />
-        <line x1="0" y1="0" x2="24" y2="12" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.6" />
+        <path d="M0,12 L0,-12 L24,0 L24,24 Z" fill="url(#grad-blue)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" opacity="0.8" />
+        <line x1="12" y1="6" x2="12" y2="18" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.5" />
+        <line x1="0" y1="0" x2="24" y2="12" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.5" />
       </g>
 
-      <!-- Top face Group (Green Gradient - Transparent) -->
+      <!-- Top face (Green) -->
       <g class="core-shifter-top">
-        <path d="M-24,0 L0,-12 L24,0 L0,12 Z" fill="url(#grad-green)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" opacity="0.75" />
-        <!-- Top face divisions -->
-        <line x1="-12" y1="-6" x2="12" y2="6" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.6" />
-        <line x1="12" y1="-6" x2="-12" y2="6" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.6" />
+        <path d="M-24,0 L0,-12 L24,0 L0,12 Z" fill="url(#grad-green)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" opacity="0.8" />
+        <line x1="-12" y1="-6" x2="12" y2="6" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.5" />
+        <line x1="12" y1="-6" x2="-12" y2="6" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.5" />
       </g>
     </g>
 
-    <!-- Front Exterior Glass Cylinder Shell (Semi-transparent) -->
-    <path d="M-40,-60 L-40,60 A40,20 0 0,0 40,60 L40,-60 A40,20 0 0,1 -40,-60 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" opacity="0.25" />
+    <!-- Front Exterior Glass Cylinder Shell -->
+    <path d="M-40,-60 L-40,60 A40,20 0 0,0 40,60 L40,-60 A40,20 0 0,1 -40,-60 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" opacity="0.2" />
 
-    <!-- Glass Refraction & Reflection Highlights (Adds premium glossy realism) -->
-    <path d="M-8,-52 L-28,52" stroke="#ffffff" stroke-width="2" opacity="0.2" stroke-linecap="round" />
-    <path d="M-32,-45 L-32,45" stroke="#ffffff" stroke-width="0.8" opacity="0.15" stroke-linecap="round" />
-    <path d="M26,-48 L26,48" stroke="#ffffff" stroke-width="1.2" opacity="0.15" stroke-linecap="round" />
+    <!-- Glass Refraction Highlights -->
+    <path d="M-8,-52 L-28,52" stroke="var(--color-logo-cream)" stroke-width="2" opacity="0.25" stroke-linecap="round" />
+    <path d="M-32,-45 L-32,45" stroke="var(--color-logo-cream)" stroke-width="0.8" opacity="0.18" stroke-linecap="round" />
+    <path d="M26,-48 L26,48" stroke="var(--color-logo-cream)" stroke-width="1.2" opacity="0.18" stroke-linecap="round" />
 
-    <!-- ====== ROTATING TURNTABLE TOP DECK (Caps the Cylinder) ====== -->
-    <ellipse cx="0" cy="-60" rx="0" ry="20" fill="var(--fill-card-grey)" stroke="var(--stroke-primary)" stroke-width="1.1" />
-    <ellipse cx="0" cy="-60" rx="30" ry="15" fill="none" stroke="var(--stroke-primary)" stroke-width="0.8" stroke-dasharray="3 4" />
-    <circle cx="0" cy="-60" r="2" fill="var(--stroke-primary)" />
+    <!-- ====== TURNTABLE TOP DECK ====== -->
+    <ellipse cx="0" cy="-60" rx="30" ry="15" fill="var(--fill-card-grey)" stroke="var(--stroke-primary)" stroke-width="1.5" />
+    <ellipse cx="0" cy="-60" rx="22" ry="11" fill="none" stroke="var(--color-logo-gold)" stroke-width="0.8" stroke-dasharray="3 4" opacity="0.5" />
+    <circle cx="0" cy="-60" r="2.5" fill="var(--stroke-primary)" />
 
 
     <!-- ====== LAPTOP MODULE (LEFT: ANALYTICS & GRIDS) ====== -->
-    <!-- Green Desk Mat (centered at -110, 60) -->
-    <path d="M-170,60 L-110,30 L-50,60 L-110,90 Z" fill="url(#grad-green)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-    
+    <!-- Desk Mat -->
+    <path d="M-170,60 L-110,30 L-50,60 L-110,90 Z" fill="url(#grad-green)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+
     <g class="interactive-group" transform="translate(-110, 60)">
-      <!-- Shadow -->
-      <path d="M-30,5 L20,-20 L32,-14 L-18,11 Z" fill="rgba(0,0,0,0.1)" />
+      <!-- Floor shadow -->
+      <ellipse cx="0" cy="15" rx="35" ry="9" fill="rgba(18, 18, 20, 0.08)" filter="url(#floorShadow)" />
+      <!-- 3D Thickness edge (bottom) -->
+      <path d="M-30,5 L-30,9 L-18,15 L-18,11" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+      <path d="M-18,15 L32,-10 L32,-14" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
       <!-- Laptop Keyboard Base -->
-      <path d="M-30,5 L20,-20 L32,-14 L-18,11 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-      <path d="M-30,5 L-30,9 L-18,15 L-18,11 M-18,15 L32,-10 L32,-14" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-      <line x1="-18" y1="11" x2="32" y2="-14" stroke="var(--stroke-primary)" stroke-width="1.1" />
-      
+      <path d="M-30,5 L20,-20 L32,-14 L-18,11 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+      <line x1="-18" y1="11" x2="32" y2="-14" stroke="var(--stroke-primary)" stroke-width="1.5" />
+
       <!-- Laptop Screen (slanted back plane) -->
-      <path d="M-18,11 L32,-14 L32,-44 L-18,-19 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-      <!-- Laptop Screen Display (Yellow display) -->
+      <path d="M-18,11 L32,-14 L32,-44 L-18,-19 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+      <!-- 3D Thickness edge (screen side) -->
+      <path d="M32,-14 L32,-44" stroke="var(--stroke-primary)" stroke-width="1.5" />
+
+      <!-- Screen Display -->
       <g>
-        <!-- Display background -->
-        <path d="M-14,9 L28,-12 L28,-39 L-14,-18 Z" fill="var(--color-yellow-light)" stroke="var(--stroke-primary)" stroke-width="0.8" />
-        
-        <!-- Pie Chart on Screen (rx=14, ry=7 isometric ellipse) -->
+        <path d="M-14,9 L28,-12 L28,-39 L-14,-18 Z" fill="var(--color-gold-light)" stroke="var(--stroke-primary)" stroke-width="1" />
+
+        <!-- Pie Chart on Screen -->
         <g transform="translate(7, -15)">
-          <path d="M-7,-3.5 A14,7 0 0,1 7,-3.5 L0,0 Z" fill="var(--color-green)" stroke="var(--stroke-primary)" stroke-width="0.8" />
-          <path d="M7,-3.5 A14,7 0 0,1 10,2 L0,0 Z" fill="var(--color-purple)" stroke="var(--stroke-primary)" stroke-width="0.8" />
-          <path d="M10,2 A14,7 0 1,1 -7,-3.5 L0,0 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="0.8" />
+          <path d="M-7,-3.5 A14,7 0 0,1 7,-3.5 L0,0 Z" fill="var(--color-green)" stroke="var(--stroke-primary)" stroke-width="1" />
+          <path d="M7,-3.5 A14,7 0 0,1 10,2 L0,0 Z" fill="var(--color-blue)" stroke="var(--stroke-primary)" stroke-width="1" />
+          <path d="M10,2 A14,7 0 1,1 -7,-3.5 L0,0 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1" />
         </g>
 
-        <!-- Scanning laser overlay clip (to stay within screen bounds) -->
+        <!-- Scanning diagonal line -->
         <g clip-path="url(#consoleClip)">
-          <!-- Dynamic diagonal scanline -->
           <line x1="-14" y1="9" x2="-14" y2="-18" class="scan-line" />
         </g>
       </g>
@@ -425,240 +403,244 @@
 
     <!-- ====== SERVER MODULE (RIGHT: AI & MEDIA) ====== -->
     <g class="interactive-group" transform="translate(120, 10)">
-      <!-- Server Side Left -->
-      <path d="M-40,20 L-40,-60 L0,-40 L0,40 Z" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-      <!-- Server Side Right -->
-      <path d="M0,40 L0,-40 L40,-60 L40,20 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-      <!-- Server Top Deck (Yellow top) -->
-      <path d="M-40,-60 L0,-40 L40,-60 L0,-80 Z" fill="url(#grad-yellow)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
+      <!-- Floor shadow -->
+      <ellipse cx="0" cy="30" rx="42" ry="11" fill="rgba(18, 18, 20, 0.08)" filter="url(#floorShadow)" />
+      <!-- Server Side Left (dark thickness) -->
+      <path d="M-40,20 L-40,-60 L0,-40 L0,40 Z" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+      <!-- Server Side Right (front face) -->
+      <path d="M0,40 L0,-40 L40,-60 L40,20 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+      <!-- Server Top Deck -->
+      <path d="M-40,-60 L0,-40 L40,-60 L0,-80 Z" fill="url(#grad-gold)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
 
-      <!-- Server console buttons and indicators (Sequential active LED runner) -->
+      <!-- Server console LEDs -->
       <circle cx="-30" cy="-10" r="1.5" fill="var(--color-green)" class="server-led-1 pulse-light" />
-      <circle cx="-25" cy="-12" r="1.5" fill="var(--color-cyan)" class="server-led-2 pulse-light" />
-      <circle cx="-20" cy="-15" r="1.5" fill="var(--color-purple)" class="server-led-3 pulse-light" />
-      <circle cx="-15" cy="-17" r="1.5" fill="var(--color-orange)" class="server-led-2 pulse-light" />
+      <circle cx="-25" cy="-12" r="1.5" fill="var(--color-teal)" class="server-led-2 pulse-light" />
+      <circle cx="-20" cy="-15" r="1.5" fill="var(--color-blue)" class="server-led-3 pulse-light" />
+      <circle cx="-15" cy="-17" r="1.5" fill="var(--color-crimson)" class="server-led-2 pulse-light" />
 
-      <!-- Horizontal cabinet vent grooves -->
-      <path d="M8,-10 L32,2" stroke="var(--stroke-primary)" stroke-width="0.8" />
-      <path d="M8,-20 L32,-8" stroke="var(--stroke-primary)" stroke-width="0.8" />
-      <path d="M8,-30 L32,-18" stroke="var(--stroke-primary)" stroke-width="0.8" />
+      <!-- Vent grooves -->
+      <path d="M8,-10 L32,2" stroke="var(--stroke-primary)" stroke-width="1" />
+      <path d="M8,-20 L32,-8" stroke="var(--stroke-primary)" stroke-width="1" />
+      <path d="M8,-30 L32,-18" stroke="var(--stroke-primary)" stroke-width="1" />
     </g>
 
 
     <!-- ====== AREA CHART CONSOLE (BOTTOM-RIGHT: GEOINT) ====== -->
-    <!-- Console screen centered at (20, 50) -->
     <g transform="translate(20, 50)">
-      <!-- Console Base Frame -->
-      <path d="M-15,65 L25,45 L65,65 L25,85 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-      <path d="M-15,57 L25,37 L65,57 L25,77 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-      <path d="M-15,65 L-15,57 L25,77 L25,85 Z" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-      <path d="M25,85 L25,77 L65,57 L65,65 Z" fill="var(--fill-card-grey)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-      
-      <!-- Screen Area inside top face (Deep dark console color) -->
-      <path d="M-5,57 L25,42 L55,57 L25,72 Z" fill="var(--fill-card-grey)" stroke="var(--stroke-primary)" stroke-width="0.8" stroke-linejoin="round" />
-      
-      <!-- Infinitely scrolling live-feed waveform inside clip path -->
+      <!-- Floor shadow -->
+      <ellipse cx="25" cy="60" rx="42" ry="10" fill="rgba(18, 18, 20, 0.08)" filter="url(#floorShadow)" />
+
+      <!-- Console Base Frame with 3D thickness -->
+      <path d="M-15,65 L25,45 L65,65 L25,85 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+      <!-- Console Top Face (screen surface) -->
+      <path d="M-15,57 L25,37 L65,57 L25,77 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+      <!-- Left thickness -->
+      <path d="M-15,65 L-15,57 L25,77 L25,85 Z" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+      <!-- Right thickness -->
+      <path d="M25,85 L25,77 L65,57 L65,65 Z" fill="var(--fill-card-grey)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+
+      <!-- Screen Area -->
+      <path d="M-5,57 L25,42 L55,57 L25,72 Z" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1" stroke-linejoin="round" />
+
+      <!-- Live-feed waveform -->
       <g clip-path="url(#consoleClip)">
         <g class="osc-wave">
-          <!-- Waveform Segment 1 -->
-          <path d="M-10,72 L-1,56 L10,48 L22,53 L38,44 L50,51 L50,72 Z" fill="url(#grad-purple)" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.8" />
-          <path d="M-1,56 L10,48 L22,53 L38,44 L50,51" fill="none" stroke="var(--color-yellow)" stroke-width="0.8" />
-          
-          <!-- Waveform Segment 2 (Seamlessly shifted by dx=30, dy=-15) -->
-          <path d="M20,57 L29,41 L40,33 L52,38 L68,29 L80,36 L80,57 Z" fill="url(#grad-purple)" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.8" />
-          <path d="M29,41 L40,33 L52,38 L68,29 L80,36" fill="none" stroke="var(--color-yellow)" stroke-width="0.8" />
+          <path d="M-10,72 L-1,56 L10,48 L22,53 L38,44 L50,51 L50,72 Z" fill="url(#grad-blue)" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.7" />
+          <path d="M-1,56 L10,48 L22,53 L38,44 L50,51" fill="none" stroke="var(--color-logo-gold)" stroke-width="1" />
+
+          <path d="M20,57 L29,41 L40,33 L52,38 L68,29 L80,36 L80,57 Z" fill="url(#grad-blue)" stroke="var(--stroke-primary)" stroke-width="0.8" opacity="0.7" />
+          <path d="M29,41 L40,33 L52,38 L68,29 L80,36" fill="none" stroke="var(--color-logo-gold)" stroke-width="1" />
         </g>
       </g>
     </g>
 
 
-    <!-- ====== DOUBLE-LAYER DECOUPLED FLOATING ARTIFACTS ====== -->
-    <!-- Outer Group translation secures the position. Inner class floats it relative. -->
-    
-    <!-- CSV Card (Floating Left-Top: Upgraded with Vector Line Chart) -->
+    <!-- ====== FLOATING ARTIFACTS (Dossigraphica-style 3D Cards) ====== -->
+
+    <!-- CSV / Chart Card (Left-Top) -->
     <g transform="translate(-185, -25)">
       <g class="float-med interactive-card">
-        <path d="M-20,0 L20,-20 L40,-10 L0,10 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" filter="url(#shadow-card)" />
-        <path d="M-15,-2 L15,-17" stroke="var(--color-purple)" stroke-width="1.5" />
-        <!-- Miniature glowing line chart -->
-        <path d="M-10,3 L2,-6 L14,0 L26,-10" fill="none" stroke="var(--color-purple)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" />
-        <circle cx="2" cy="-6" r="1.5" fill="var(--color-yellow)" />
-        <circle cx="26" cy="-10" r="1.5" fill="var(--color-cyan)" />
+        <ellipse cx="10" cy="5" rx="30" ry="8" fill="rgba(18, 18, 20, 0.08)" filter="url(#floorShadow)" />
+        <!-- 3D Thickness edge -->
+        <path d="M-20,0 L-20,4 L0,14 L0,10" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+        <path d="M0,14 L40,4 L40,-10" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+        <!-- Front face -->
+        <path d="M-20,0 L20,-20 L40,-10 L0,10 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" filter="url(#shadow-card)" />
+        <path d="M-15,-2 L15,-17" stroke="var(--color-blue)" stroke-width="1.8" />
+        <path d="M-10,3 L2,-6 L14,0 L26,-10" fill="none" stroke="var(--color-blue)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+        <circle cx="2" cy="-6" r="1.5" fill="var(--color-logo-gold)" />
+        <circle cx="26" cy="-10" r="1.5" fill="var(--color-teal)" />
       </g>
     </g>
 
-    <!-- AI Card (Floating Right Server tab: Upgraded with Neural Synapse) -->
+    <!-- AI / Neural Card (Right Server tab) -->
     <g transform="translate(100, -70)">
       <g class="float-slow interactive-card">
-        <path d="M-15,7.5 L15,-7.5 L25,-2.5 L-5,12.5 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" filter="url(#shadow-card)" />
-        <path d="M-5,12.5 L10,5 L25,-2.5" stroke="var(--color-yellow)" stroke-width="1.5" />
-        <!-- Mini neural connection node network -->
-        <line x1="5" y1="5" x2="-5" y2="1" stroke="var(--stroke-secondary)" stroke-width="0.8" opacity="0.6" />
-        <line x1="5" y1="5" x2="15" y2="9" stroke="var(--stroke-secondary)" stroke-width="0.8" opacity="0.6" />
-        <line x1="5" y1="5" x2="12" y2="-1" stroke="var(--stroke-secondary)" stroke-width="0.8" opacity="0.6" />
-        <circle cx="5" cy="5" r="2.2" fill="var(--color-yellow)" />
-        <circle cx="-5" cy="1" r="1.2" fill="var(--color-cyan)" />
-        <circle cx="15" cy="9" r="1.2" fill="var(--color-purple)" />
+        <ellipse cx="5" cy="5" rx="22" ry="6" fill="rgba(18, 18, 20, 0.08)" filter="url(#floorShadow)" />
+        <path d="M-15,7.5 L15,-7.5 L25,-2.5 L-5,12.5 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" filter="url(#shadow-card)" />
+        <path d="M-5,12.5 L10,5 L25,-2.5" stroke="var(--color-logo-gold)" stroke-width="1.5" />
+        <line x1="5" y1="5" x2="-5" y2="1" stroke="var(--stroke-secondary)" stroke-width="0.8" opacity="0.5" />
+        <line x1="5" y1="5" x2="15" y2="9" stroke="var(--stroke-secondary)" stroke-width="0.8" opacity="0.5" />
+        <line x1="5" y1="5" x2="12" y2="-1" stroke="var(--stroke-secondary)" stroke-width="0.8" opacity="0.5" />
+        <circle cx="5" cy="5" r="2.2" fill="var(--color-logo-gold)" />
+        <circle cx="-5" cy="1" r="1.2" fill="var(--color-teal)" />
+        <circle cx="15" cy="9" r="1.2" fill="var(--color-blue)" />
         <circle cx="12" cy="-1" r="1.2" fill="var(--color-green)" />
       </g>
     </g>
 
-    <!-- Gear Card (Floating Middle Right) -->
+    <!-- Gear / Config Card (Middle Right) -->
     <g transform="translate(50, -45)">
       <g class="float-fast interactive-card">
-        <path d="M-15,7.5 L15,-7.5 L25,-2.5 L-5,12.5 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" filter="url(#shadow-card)" />
-        <path d="M-5,12.5 L10,5 L25,-2.5" stroke="var(--color-purple)" stroke-width="1.5" />
+        <ellipse cx="5" cy="5" rx="22" ry="6" fill="rgba(18, 18, 20, 0.08)" filter="url(#floorShadow)" />
+        <path d="M-15,7.5 L15,-7.5 L25,-2.5 L-5,12.5 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" filter="url(#shadow-card)" />
+        <path d="M-5,12.5 L10,5 L25,-2.5" stroke="var(--color-blue)" stroke-width="1.5" />
         <path d="M5,-2 L7,-1 L8,-3 L10,-2 L9,0 L10,1 L12,0 L13,2 L11,3 L11,5 L13,6 L12,8 L10,7 L9,8 L10,10 L8,11 L7,9 L5,10 L4,12 L2,11 L3,9 L2,8 L0,9 L-1,7 L1,6 L1,4 L-1,3 L0,1 L2,2 L3,1 L2,-1" fill="none" stroke="var(--stroke-primary)" stroke-width="0.8" transform="rotate(-26) scale(0.6)" />
       </g>
     </g>
 
-    <!-- Lightning Card (Floating Left-Center) -->
+    <!-- Lightning / Energy Card (Left-Center) -->
     <g transform="translate(-80, -90)">
       <g class="float-fast interactive-card">
-        <path d="M-15,7.5 L15,-7.5 L25,-2.5 L-5,12.5 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" filter="url(#shadow-card)" />
-        <path d="M0,8 L8,0 L4,0 L10,-8 L2,0 L6,0 Z" fill="var(--color-yellow)" stroke="var(--stroke-primary)" stroke-width="0.8" transform="rotate(-26) translate(3, 2) scale(0.8)" />
+        <ellipse cx="5" cy="5" rx="22" ry="6" fill="rgba(18, 18, 20, 0.08)" filter="url(#floorShadow)" />
+        <path d="M-15,7.5 L15,-7.5 L25,-2.5 L-5,12.5 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" filter="url(#shadow-card)" />
+        <path d="M0,8 L8,0 L4,0 L10,-8 L2,0 L6,0 Z" fill="var(--color-logo-gold)" stroke="var(--stroke-primary)" stroke-width="1" transform="rotate(-26) translate(3, 2) scale(0.8)" />
       </g>
     </g>
 
-    <!-- Calendar Card "Fri 15" (Floating Far Right: Upgraded with Clean Completed Checkmark) -->
+    <!-- Calendar / Check Card (Far Right) -->
     <g transform="translate(195, -60)">
       <g class="float-slow interactive-card">
-        <path d="M-20,10 L20,-10 L32,-4 L-8,16 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" filter="url(#shadow-card)" />
+        <ellipse cx="6" cy="6" rx="28" ry="7" fill="rgba(18, 18, 20, 0.08)" filter="url(#floorShadow)" />
+        <path d="M-20,10 L20,-10 L32,-4 L-8,16 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" filter="url(#shadow-card)" />
         <path d="M-8,16 L12,6 L32,-4" stroke="var(--stroke-primary)" stroke-width="1.5" />
-        <!-- Mini glowing checkmark representing completed checklist items -->
         <path d="M0,8 L5,12 L15,3" fill="none" stroke="var(--color-green)" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
       </g>
     </g>
 
-    <!-- Down arrow Green Card (Floating Top Right) -->
+    <!-- Down Arrow / Deploy Card (Top Right) -->
     <g transform="translate(150, -110)">
       <g class="float-med interactive-card">
-        <path d="M-15,7.5 L15,-7.5 L25,-2.5 L-5,12.5 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" filter="url(#shadow-card)" />
-        <path d="M5,-5 L5,5 L1,5 L6,10 L11,5 L7,5 L7,-5 Z" fill="var(--color-green)" stroke="var(--stroke-primary)" stroke-width="0.8" transform="rotate(-26) translate(2, 2) scale(0.8)" />
+        <ellipse cx="5" cy="5" rx="22" ry="6" fill="rgba(18, 18, 20, 0.08)" filter="url(#floorShadow)" />
+        <path d="M-15,7.5 L15,-7.5 L25,-2.5 L-5,12.5 Z" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" filter="url(#shadow-card)" />
+        <path d="M5,-5 L5,5 L1,5 L6,10 L11,5 L7,5 L7,-5 Z" fill="var(--color-green)" stroke="var(--stroke-primary)" stroke-width="1" transform="rotate(-26) translate(2, 2) scale(0.8)" />
       </g>
     </g>
 
-    <!-- ====== DECORATIVE CLOUDS (SHIFTED UP & RIGHT TO CLEAR BRAND TEXT OVERLAPS) ====== -->
-    <!-- Decoupled Left Cloud (Shifted and scaled to clear "designed under...") -->
+    <!-- ====== DECORATIVE CLOUDS ====== -->
     <g transform="translate(-160, -115) scale(0.7)">
       <g class="float-slow">
-        <path d="M0,0 C10,-10 30,-10 40,0 C50,-5 65,5 60,15 C60,25 40,30 20,30 C0,30 -10,20 -5,10 C-10,5 -5,-5 0,0 Z" fill="none" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linecap="round" />
+        <path d="M0,0 C10,-10 30,-10 40,0 C50,-5 65,5 60,15 C60,25 40,30 20,30 C0,30 -10,20 -5,10 C-10,5 -5,-5 0,0 Z" fill="none" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
       </g>
     </g>
     <g transform="translate(-130, -75) scale(0.55)">
       <g class="float-med">
-        <path d="M0,0 C10,-10 30,-10 40,0 C50,-5 65,5 60,15 C60,25 40,30 20,30 C0,30 -10,20 -5,10 C-10,5 -5,-5 0,0 Z" fill="none" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linecap="round" />
+        <path d="M0,0 C10,-10 30,-10 40,0 C50,-5 65,5 60,15 C60,25 40,30 20,30 C0,30 -10,20 -5,10 C-10,5 -5,-5 0,0 Z" fill="none" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
       </g>
     </g>
-    <!-- Decoupled Right Cloud -->
     <g transform="translate(130, -40) scale(0.7)">
       <g class="float-med">
-        <path d="M0,0 C10,-10 30,-10 40,0 C50,-5 65,5 60,15 C60,25 40,30 20,30 C0,30 -10,20 -5,10 C-10,5 -5,-5 0,0 Z" fill="none" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linecap="round" />
+        <path d="M0,0 C10,-10 30,-10 40,0 C50,-5 65,5 60,15 C60,25 40,30 20,30 C0,30 -10,20 -5,10 C-10,5 -5,-5 0,0 Z" fill="none" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
       </g>
     </g>
 
 
     <!-- ====== ILLUSTRATED CARTOON CHARACTERS ====== -->
-    
-    <!-- Group 1 (Left: Creative Web Dev Road-Rocket Capsule - Interactive Showcase & Blog) -->
+
+    <!-- Group 1 (Left: Creative Web Dev Road-Rocket Capsule) -->
     <g transform="translate(-210, 70)">
-      <!-- Symmetrical Road-Rocket Capsule centered exactly at x=0 (absolute x=-210) -->
       <g class="interactive-group float-slow">
-        <!-- Base Shadow -->
-        <ellipse cx="0" cy="55" rx="10" ry="4" fill="rgba(0,0,0,0.1)" />
-        
-        <!-- Glowing exhaust flame base (pulsating) -->
-        <path class="rocket-glow" d="M-6,52 L-2,53 M2,52 L6,53" fill="none" stroke="var(--color-yellow)" stroke-width="1.5" stroke-linecap="round" />
-        
+        <ellipse cx="0" cy="55" rx="10" ry="4" fill="rgba(18, 18, 20, 0.1)" filter="url(#floorShadow)" />
+
+        <!-- Glowing exhaust -->
+        <path class="rocket-glow" d="M-6,52 L-2,53 M2,52 L6,53" fill="none" stroke="var(--color-logo-gold)" stroke-width="1.5" stroke-linecap="round" />
+
         <!-- Top Glass Dome Cap -->
-        <path d="M-5,13 Q0,10 5,13 L5,24 L-5,24 Z" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-        
-        <!-- Top Glass Bulb with glowing cyan indicator core -->
-        <circle cx="0" cy="15" r="4.5" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" />
-        <circle cx="0" cy="15" r="2" fill="var(--color-cyan)" class="pulse-light" />
-        
-        <!-- Yellow Roadway segment (with Premium Gradient) -->
-        <path d="M-4,20 L4,20 L4,35 L-4,35 Z" fill="url(#grad-yellow)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-        
-        <!-- Purple Roadway segment (with Premium Gradient) -->
-        <path d="M-6,35 L6,35 L8,44 L-8,44 Z" fill="url(#grad-purple)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-        
-        <!-- Tripod Support legs -->
-        <path d="M-2,44 L-2,52 M2,44 L2,52" fill="none" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linecap="round" />
-        
-        <!-- Holographic Interactive Tablet (glowing and floating next to the road) -->
+        <path d="M-5,13 Q0,10 5,13 L5,24 L-5,24 Z" fill="var(--fill-card-dark)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+
+        <!-- Top Glass Bulb -->
+        <circle cx="0" cy="15" r="4.5" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" />
+        <circle cx="0" cy="15" r="2" fill="var(--color-teal)" class="pulse-light" />
+
+        <!-- Gold Roadway segment -->
+        <path d="M-4,20 L4,20 L4,35 L-4,35 Z" fill="url(#grad-gold)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+
+        <!-- Blue Roadway segment -->
+        <path d="M-6,35 L6,35 L8,44 L-8,44 Z" fill="url(#grad-blue)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+
+        <!-- Tripod legs -->
+        <path d="M-2,44 L-2,52 M2,44 L2,52" fill="none" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linecap="round" />
+
+        <!-- Floating tablet -->
         <g class="float-fast" transform="translate(12, 0)">
-          <path d="M-2,25 L-6,27 L-4,33 L0,31 Z" fill="url(#grad-cyan)" stroke="var(--stroke-primary)" stroke-width="0.8" />
+          <path d="M-2,25 L-6,27 L-4,33 L0,31 Z" fill="url(#grad-teal)" stroke="var(--stroke-primary)" stroke-width="1" />
         </g>
       </g>
     </g>
 
     <!-- Group 2 (Middle-Right: Operator) -->
     <g class="interactive-group" transform="translate(70, 50)">
-      <ellipse cx="0" cy="50" rx="9" ry="3.5" fill="rgba(0,0,0,0.1)" />
-      <circle cx="0" cy="8" r="4" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" />
-      <path d="M-4,8 C-7,7 -9,12 -5,11" fill="none" stroke="var(--stroke-primary)" stroke-width="1.1" />
-      <path d="M-5,12 L5,12 L4,28 L-4,28 Z" fill="var(--color-green)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-      <path d="M-4,28 L-5,48 M2,28 L1,48" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linecap="round" />
-      <path d="M5,15 L12,20 L15,10" fill="none" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
+      <ellipse cx="0" cy="50" rx="9" ry="3.5" fill="rgba(18, 18, 20, 0.1)" filter="url(#floorShadow)" />
+      <circle cx="0" cy="8" r="4" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" />
+      <path d="M-4,8 C-7,7 -9,12 -5,11" fill="none" stroke="var(--stroke-primary)" stroke-width="1.5" />
+      <path d="M-5,12 L5,12 L4,28 L-4,28 Z" fill="var(--color-green)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+      <path d="M-4,28 L-5,48 M2,28 L1,48" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linecap="round" />
+      <path d="M5,15 L12,20 L15,10" fill="none" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
     </g>
 
-    <!-- Group 3 (Far-Right: Guy leaning) -->
+    <!-- Group 3 (Far-Right: Guy leaning on screen) -->
     <g transform="translate(180, 20)">
-      <ellipse cx="0" cy="50" rx="10" ry="3.5" fill="rgba(0,0,0,0.1)" />
-      
-      <!-- Big Yellow Screen he leans on -->
-      <path d="M10,0 L25,-12.5 L35,10 L20,22.5 Z" fill="var(--color-yellow)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-      <path d="M13,2 L23,-8" stroke="var(--stroke-primary)" stroke-width="1.2" />
-      
+      <ellipse cx="0" cy="50" rx="10" ry="3.5" fill="rgba(18, 18, 20, 0.1)" filter="url(#floorShadow)" />
+
+      <!-- Large Gold Screen -->
+      <path d="M10,0 L25,-12.5 L35,10 L20,22.5 Z" fill="var(--color-gold-light)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+      <path d="M13,2 L23,-8" stroke="var(--stroke-primary)" stroke-width="1.5" />
+
       <g class="interactive-group" transform="translate(-5, 0)">
-        <circle cx="0" cy="8" r="4" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.1" />
-        <path d="M-5,12 L5,12 L3,28 L-3,28 Z" fill="var(--color-purple)" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linejoin="round" />
-        <path d="M-3,28 L-4,48 M1,28 L0,48" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linecap="round" />
-        <path d="M5,14 L12,18 L15,22" fill="none" stroke="var(--stroke-primary)" stroke-width="1.1" stroke-linecap="round" />
+        <circle cx="0" cy="8" r="4" fill="var(--fill-card-bg)" stroke="var(--stroke-primary)" stroke-width="1.5" />
+        <path d="M-5,12 L5,12 L3,28 L-3,28 Z" fill="var(--color-blue)" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linejoin="round" />
+        <path d="M-3,28 L-4,48 M1,28 L0,48" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linecap="round" />
+        <path d="M5,14 L12,18 L15,22" fill="none" stroke="var(--stroke-primary)" stroke-width="1.5" stroke-linecap="round" />
       </g>
     </g>
 
 
-    <!-- ==================== CAD-STYLE HORIZONTAL ANNOTATIONS & POINTERS ==================== -->
-    <!-- Decoupled horizontal annotations ensuring zero element overlap & perfect clarity -->
-    
+    <!-- ==================== CAD-STYLE ANNOTATIONS & POINTERS ==================== -->
+
     <!-- Central Core (DOGECAT0) -->
     <g class="interactive-group">
       <text class="text-label" x="0" y="-130" text-anchor="middle">DOGECAT0</text>
       <text class="text-desc" x="0" y="-119" text-anchor="middle">Software Architect &amp; Full-Stack Engineer</text>
     </g>
 
-    <!-- Analytics & Grids (Gridgraphica / AperilexLabs) -->
+    <!-- Analytics & Grids -->
     <g class="interactive-group">
       <circle cx="-115" cy="40" r="2.5" fill="var(--stroke-primary)" />
-      <path d="M-115,40 L-220,18" stroke="var(--stroke-primary)" stroke-width="0.8" stroke-dasharray="2 2" />
+      <path d="M-115,40 L-220,18" stroke="var(--stroke-primary)" stroke-width="0.8" stroke-dasharray="2 3" />
       <circle cx="-220" cy="18" r="2" fill="var(--stroke-primary)" />
       <text class="text-label" x="-225" y="15" text-anchor="end">GRIDGRAPHICA &amp; APERILEX</text>
       <text class="text-desc" x="-225" y="26" text-anchor="end">SEC Analytics &amp; Data Center Deep Research</text>
     </g>
 
-    <!-- AI & Media (Shotwise / AI Pipelines - POINTING AND ROWING LEFT TO RESOLVE BOUNDARY OVERLAP) -->
+    <!-- AI & Media -->
     <g class="interactive-group">
       <circle cx="120" cy="-20" r="2.5" fill="var(--stroke-primary)" />
-      <!-- Re-routed guideline to flow rightward into empty margin, keeping text perfectly clear of elements -->
-      <path d="M120,-20 L250,-20" stroke="var(--stroke-primary)" stroke-width="0.8" stroke-dasharray="2 2" />
+      <path d="M120,-20 L250,-20" stroke="var(--stroke-primary)" stroke-width="0.8" stroke-dasharray="2 3" />
       <circle cx="250" cy="-20" r="2" fill="var(--stroke-primary)" />
       <text class="text-label" x="255" y="-22" text-anchor="start">SYNAPSE (AI WORKFLOWS)</text>
       <text class="text-desc" x="255" y="-11" text-anchor="start">Daily Life &amp; Task Analytics via LLMs</text>
     </g>
 
-    <!-- GEOINT & Maps (Dossigraphica / NearPulse - POINTING AND ROWING LEFT TO PREVENT LEGEND OVERLAP) -->
+    <!-- GEOINT & Maps -->
     <g class="interactive-group">
       <circle cx="25" cy="57" r="2.5" fill="var(--stroke-primary)" />
-      <!-- Re-routed pointer line down-right for spatial balance and zero boundary clutter -->
-      <path d="M25,57 L150,90" stroke="var(--stroke-primary)" stroke-width="0.8" stroke-dasharray="2 2" />
+      <path d="M25,57 L150,90" stroke="var(--stroke-primary)" stroke-width="0.8" stroke-dasharray="2 3" />
       <circle cx="150" cy="90" r="2" fill="var(--stroke-primary)" />
       <text class="text-label" x="155" y="87" text-anchor="start">DOSSIGRAPHICA (GEO-INTEL)</text>
       <text class="text-desc" x="155" y="98" text-anchor="start">Deep Research Pipelines for Corporate Analysis</text>
     </g>
 
-    <!-- UX & Interactive (WebGL / Canvas & Creative Eng.) -->
+    <!-- UX & Interactive -->
     <g class="interactive-group">
       <text class="text-label" x="-210" y="148" text-anchor="middle">CREATIVE WEB &amp; PERSONAL BLOG</text>
       <text class="text-desc" x="-210" y="159" text-anchor="middle">Interactive Showcase &amp; Writing (Dogecat0.github.io)</text>
