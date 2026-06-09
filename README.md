@@ -12,7 +12,7 @@
 
 ### About Me
 
-Currently I like building **LLM-powered features/applications**, particularly interested in the intersection of **geography, corporate intelligence, and (maybe?)financial analysis**. 
+Currently I like building **LLM-powered features/applications**, particularly interested in the intersection of **geography, corporate intelligence, and financial analysis**. 
 
 - 🌐 **Blog**: [zhicheng-wang.com](https://zhicheng-wang.com) — where I share things I encounter while building
 - ✉️ **Contact**: [zcmmwang@gmail.com](mailto:zcmmwang@gmail.com)
