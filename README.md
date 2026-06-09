@@ -26,9 +26,8 @@ Currently I like building **LLM-powered features/applications**, particularly in
 
 | Project | Scale | Description |
 |---------|-------|-------------|
-| [**🏢 Dossigraphica**](https://github.com/Dogecat0/Dossigraphica) | Macro | Autonomous geo-intelligence platform for corporate analysis & company intelligence. Given a company name, it researches the open web, extracts structured intelligence, and visualises corporate footprints on an interactive 3D globe. |
+| [**🌎 Dossigraphica**](https://github.com/Dogecat0/Dossigraphica) | Macro | Autonomous geo-intelligence platform for corporate analysis & company intelligence. Given a company name, it researches the open web, extracts structured intelligence, and visualises corporate footprints on an interactive 3D globe. |
 | [**📍 NearPulse**](https://www.nearpulse.space) | Micro | Neighbourhood insights for finding your next place to live. Drop an address, get the pulse of nearby places in minutes. |
-| [**🗺️ Gridgraphica**](https://github.com/Dogecat0/Gridgraphica) | Macro | Geo-intelligence pipeline specialised for data centre analysis. (An experimental copy of Dossigraphica) |
 
 #### 📈 Financial Analysis
 
