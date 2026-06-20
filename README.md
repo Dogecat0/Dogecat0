@@ -44,15 +44,4 @@ Currently I like building **LLM-powered features/applications**, particularly in
 
 ---
 
-### 🛠️ Tech Stack
-
-**Languages:** Python, TypeScript 
-**Frameworks:** FastAPI, React 19, Next.js, Vite  
-**AI:** LLM Orchestration, LiteLLM, LLM APIs
-**Infrastructure:** Docker, AWS (S3, RDS, CloudFront, ECS), Pulumi IaC  
-**Databases:** PostgreSQL, SQLAlchemy  
-**Visualisation:** Three.js, react-globe.gl, D3, Recharts  
-
----
-
 > *"Think of it as me trying to debug life while getting better at debugging programs."*
