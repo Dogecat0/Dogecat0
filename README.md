@@ -35,7 +35,7 @@ Currently I like building **LLM-powered features/applications**, particularly in
 |---------|-------------|
 | [**📈 AperilexLabs**](https://www.aperilexlabs.com) / [**Aperilex**](https://github.com/Dogecat0/Aperilex) | Early testing ground of building with LLM for SEC filing analysis. |
 
-#### 🎲 Hobby Project
+#### 🎲 Personal Hobby Project
 
 | Project | Description |
 |---------|-------------|
