@@ -16,7 +16,6 @@ Currently I like building **LLM-powered features/applications**, particularly in
 
 - 🌐 **Blog**: [zhicheng-wang.com](https://zhicheng-wang.com) — where I share things I encounter while building
 - ✉️ **Contact**: [zcmmwang@gmail.com](mailto:zcmmwang@gmail.com)
-- 🐦 **X**: [@ZhichengWang87](https://x.com/ZhichengWang87)
 
 ---
 
